@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+    /* Simple Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #58666e;
+      background-color: #f0f3f4;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    header{
+      width: 100%;
+      height: 60px;
+      z-index: 2000;
+      background-color:  #50bcdf;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+    }
+    nav {
+      float: right;
+    }
+  .logo {
+    display: inline-block;
+    height: 36px;
+    margin: 12px 0 12px 25px;
+   }
+  .logo > img { height: 36px; }
+
+  .nav-items > li {
+    display: inline-block;
+   }
+  .nav-items > li > a {
+    line-height: 60px;
+    padding: 0 30px;
+    color: rgba(0, 0, 0, 0.4);
+   }
+  .nav-items > li > a:visited,
+  .nav-items > li > a:hover {
+    color: rgba(0, 0, 0, 0.8);
+   }
+  #content-wrap:after {
+    content: "";
+    display: block;
+    clear: both;
+   }
+  aside {
+    float: left;
+    width: 20%;
+   }
+  section {
+    float: right;
+    width: 80%;
+   }
+   header {
+  position: fixed;
+  top: 0;
+  ...
+  }
+  #wrap {
+  margin-top: 60px;
+}
+  aside {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+
+  width: 200px;
+  }
+  section {
+  float: right;
+  margin-left: 200px;
+  }
+  aside {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+
+  width: 200px;
+  padding-top: 25px;
+  background-color: #333;
+}
+aside > ul {
+  width: 200px;
+}
+aside > ul > li > a {
+  display: block;
+  color: #fff;
+  padding: 10px 0 10px 20px;
+}
+aside > ul > li > a.active {
+  background-color: #4CAF50;
+}
+aside > ul > li > a:hover:not(.active) {
+  background-color: #555;
+}
+aside > h1 {
+  padding: 20px 0 20px 20px;
+  color: #fff;
+}
+section {
+  float: right;
+
+  margin-left: 200px;
+}
+article {
+  margin: 10px;
+  padding: 25px;
+  background-color: white;
+}
+h1 { font-size: 1.8em; }
+h1, h2, h3, h4, h5, h6, p {
+  margin: 10px 5px;
+}
+    </style>
+
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <a class="logo" href+"#home">
+          <img src="img/pngwing.com.png" height="100px">
+        </a>
+        <nav>
+          <ul class="nav-items"
+            <li><a href="#home">camera</a></li>
+            <li><a href="#news">smart phone</a></li>
+            <li><a href="#contact">cinema</a></li>
+            <li><a href="#about"></a>Accessories</li>
+          </ul>
+        </nav>
+      </header>
+      <aside>
+    <h1>Aside</h1>
+    <ul>
+      <li><a href="#" class="active">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+      <li><a href="#">Newyork</a></li>
+    </ul>
+  </aside>
+  <section>
+    <article id="london">
+      <h1>London</h1>
+      <p>야권에서는 오 시장, 심상정 정의당 의원(33.5%), 안철수 국민의당 대표(30.1%), 유승민 전 국민의힘 의원(25.3%),
+        원희룡 제주지사(21.2%) 순이었다. 당적이 없는 3인 중에는 윤 전 총장에 이어 김 전 부총리(24.0%), 최 감사원장(21.3%) 순이었다.</p>
+    </article>
+    <article id="paris">
+      <h1>Paris</h1>
+      <p>이재명 경기지사가 차기 대선주자로 거론되는 정치 지도자 가운데 호감도가 가장 높은 것으로 나타났다.
+        문재인 대통령을 포함한 여야 17명의 지도자 중 호감도가 비호감도를 앞선 이는 이 지사가 유일했다. 윤석열 전 검찰총장과 4·7서울시장 보궐선거에서 당선된 오세훈 서울시장이 이 지사의 뒤를 이었다.</p>
+    </article>
+    <article id="tokyo">
+      <h1>Tokyo</h1>
+      <p>지난달 25~27일 실시한 한국일보·한국리서치의 여론조사에서 차기 대선주자로 거론되는
+        여야 지도자들을 대상으로 '얼마나 호감이 가는가'를 물은 결과, 이 지사는 49.0%의 호감도를 얻어 1위를 차지했다. 여야를 통틀어 이 지사는 유일하게 호감도(49.0%)가 비호감도(41.5%)보다 높았다. 이 지사에 이어 윤 전 총장과 오 시장이 각각 35.6%를 기록했다.</p>
+    </article>
+    <article id="newyork">
+      <h1>Newyork</h1>
+      <p>문 대통령을 포함해 여당 7명, 야당 7명, 아직 정당에 속하지 않은 윤 전 총장,
+        김동연 전 경제부총리 겸 기획재정부 장관, 최재형 감사원장 3명 등 총 17명의 지도자를 대상으로 했다. 호감도는 득표로 이어질 수 있는 지지율과 달리, 여야 대선주자가 확정되지 않은 상황에서 잠재적 확장성을 가늠하는 지표가 될 수 있다.</p>
+    </article>
+  </section>
+    </div>
+  </body>
+</html>
